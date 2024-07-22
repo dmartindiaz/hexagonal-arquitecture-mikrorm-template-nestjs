@@ -1,20 +1,20 @@
 class UserModelDomain {
     
-    private userId: string
+    private _id: string
     private name: string
     private surname: string
 
-    constructor(userId: string, name: string, surname: string) {
+    constructor(_id: string, name: string, surname: string) {
         this.name = name
         this.surname = surname
     }
 
-    public getUserId(): string {
-        return this.userId;
+    public getId(): string {
+        return this._id;
     }
 
-    public setUserId(userId: string): void {
-        this.userId = userId;
+    public setId(userId: string): void {
+        this._id = userId;
     }
 
     public getName(): string {
